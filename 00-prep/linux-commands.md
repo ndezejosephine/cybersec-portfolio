@@ -15,7 +15,7 @@ find . -type f -exec ls -la {} \;
 ## Proof
 Extracted flag: `flag{linux_is_cool}`
 
-## Lab 1.2: Process Hunting & Termination
+# Process Hunting & Termination
 
 ### Scenario
 Eliminate a persistent backdoor using only its saved PID — no process name.
