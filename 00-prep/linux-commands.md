@@ -1,4 +1,4 @@
-# File System Forensics
+# 1- File System Forensics
 ## Goal
 Practice file creation, permissions, timestamps — core forensic skills.
 ## Commands
@@ -15,7 +15,7 @@ find . -type f -exec ls -la {} \;
 ## Proof
 Extracted flag: `flag{linux_is_cool}`
 
-# Process Hunting & Termination
+# 2- Process Hunting & Termination
 
 ### Scenario
 Eliminate a persistent backdoor using only its saved PID — no process name.
