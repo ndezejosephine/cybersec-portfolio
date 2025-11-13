@@ -25,3 +25,4 @@ Eliminate a persistent backdoor using only its saved PID — no process name.
 sleep 9999 &
 echo $! > rogue.pid
 ps aux | grep sleep
+```
