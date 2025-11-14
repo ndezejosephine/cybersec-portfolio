@@ -28,3 +28,15 @@ echo $! > rogue.pid
 ps aux | grep sleep
 kill $(cat rogue.pid)
 ```
+
+# Hidden File Recovery
+```bash
+#Attacker Actions (Store sensitive data (API key, password, backdoor) in a hidden file)
+echo "API_KEY=sk-abc123xyz789secret" > config.txt
+mv config.txt .config.txt
+
+#Pentester Actions (Discovery)
+ls
+ls -a
+find ~ -type f -name ".*" 2>/dev/null | head -10
+```
